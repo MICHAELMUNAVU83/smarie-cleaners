@@ -47,7 +47,7 @@ const Pricing = () => {
           >
             <div
               style={{ backgroundColor: pricing.backgroundColor }}
-              className="h-[100px] w-[100%] flex items-center text-white flex-col"
+              className="h-[100px] py-2 w-[100%] flex items-center text-white flex-col"
             >
               <p className="text-2xl font-semibold">{pricing.title}</p>
               <p className="text-2xl font-semibold">{pricing.price}</p>

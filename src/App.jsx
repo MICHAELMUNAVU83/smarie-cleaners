@@ -9,6 +9,7 @@ import Offer from "./components/Offer";
 import Numbers from "./components/Numbers";
 import "./App.css";
 import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Offer />
       <Numbers />
       <Pricing />
+      <Footer />
     </div>
   );
 }
