@@ -6,6 +6,7 @@ import HowWeWork from "./components/HowWeWork";
 import Hero from "./components/Hero";
 import Open from "./components/Open";
 import Offer from "./components/Offer";
+import Numbers from "./components/Numbers";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Open />
       <HowWeWork />
       <Offer />
+      <Numbers />
     </div>
   );
 }
