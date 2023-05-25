@@ -8,6 +8,7 @@ import Open from "./components/Open";
 import Offer from "./components/Offer";
 import Numbers from "./components/Numbers";
 import "./App.css";
+import Pricing from "./components/Pricing";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <HowWeWork />
       <Offer />
       <Numbers />
+      <Pricing />
     </div>
   );
 }
