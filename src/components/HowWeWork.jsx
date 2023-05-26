@@ -27,14 +27,16 @@ const HowWeWork = () => {
     },
   ];
   return (
-    <div id="howwework" className="my-8">
-      <div className="flex flex-col py-8 justify-center items-center gap-2">
+    <div id="howwework">
+      <div className="flex flex-col  justify-center items-center gap-2">
         <p className="text-[#A8B1B3] text-2xl monts">Enjoy your app</p>
 
-        <p className="text-5xl text-[#6197DC] roboto font-semibold">How We Work</p>
+        <p className="text-5xl text-[#6197DC] roboto font-semibold">
+          How We Work
+        </p>
       </div>
 
-      <div className="w-[80%] mx-auto flex justify-between items-center">
+      <div className="w-[80%] mx-auto flex md:flex-row flex-col justify-between items-center">
         {works.map((work) => (
           <div
             key={work.id}

@@ -72,35 +72,35 @@ const Hero = () => {
       {slides.map((slide) => (
         <SwiperSlide key={slide.id} className="swiper-slide">
           <div
-            className="flex h-[80vh] justify-between items-center bg-cover bg-center bg-no-repeat"
+            className="flex h-[80vh] justify-between items-center bg-cover md:bg-center bg-top bg-no-repeat"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className="bg-[#5FBED6] p-2 mx-2 group cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out hover:bg-white">
               <MdArrowBackIosNew
-                className="text-white  group-hover:text-[#5FBED6] text-4xl cursor-pointer"
+                className="text-white  group-hover:text-[#5FBED6] md:text-4xl text-xl cursor-pointer"
                 onClick={swipeBack}
               />
             </div>
             <div
               className={
                 slide.id % 2 === 0
-                  ? "ml-[50%] bg-white rounded-2xl w-[400px] p-4"
-                  : "mr-[45%] w-[400px] bg-white rounded-2xl p-4"
+                  ? "md:ml-[50%] bg-white rounded-2xl  w-[400px]  p-4"
+                  : "md:mr-[45%] w-[400px]    bg-white rounded-2xl p-4"
               }
             >
-              <h1 className="text-4xl font-bold roboto text-[#5D95DB]">
+              <h1 className="md:text-4xl font-bold roboto text-[#5D95DB]">
                 {slide.title}
               </h1>
-              <p className="text-[#5A6B81] font-semibold monts text-2xl  ">
+              <p className="text-[#5A6B81] font-semibold monts md:text-2xl  ">
                 {slide.description1}
               </p>
-              <p className="text-[#5C6977] text-2xl ] roboto  ">
+              <p className="text-[#5C6977] md:text-2xl text-xs roboto  ">
                 {slide.description2}
               </p>
             </div>
             <div className="bg-[#5FBED6] p-2 mx-2 group cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out hover:bg-white">
               <MdArrowForwardIos
-                className="text-white group-hover:text-[#5FBED6] text-4xl cursor-pointer"
+                className="text-white group-hover:text-[#5FBED6]  md:text-4xl text-xl cursor-pointer"
                 onClick={swipe}
               />
             </div>

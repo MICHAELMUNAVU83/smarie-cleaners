@@ -29,11 +29,11 @@ const Open = () => {
   ];
   return (
     <div className="my-8">
-      <div className="w-[80%] mx-auto grid h-[200px] grid-cols-3 gap-8">
+      <div className="w-[80%] mx-auto  flex h-[200px]  md:flex-row flex-col gap-8">
         {details.map((detail) => (
           <div
             key={detail.id}
-            className="flex justify-center items-center flex-col gap-2 cursor-pointer rounded-lg hover:scale-105 transition-all ease-in-out duration-500"
+            className="flex justify-center md:w-[32%]  items-center flex-col gap-2 cursor-pointer rounded-lg hover:scale-105 transition-all ease-in-out duration-500"
             style={{ backgroundColor: detail.backgroundColor }}
           >
             <div className="text-7xl text-white">{detail.icon}</div>

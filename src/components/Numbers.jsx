@@ -11,31 +11,31 @@ const Numbers = () => {
       id: 1,
       title: "100%",
       description: "Quality",
-      icon: <BsFillHandThumbsUpFill className="text-5xl " />,
+      icon: <BsFillHandThumbsUpFill className="md:text-5xl " />,
     },
     {
       id: 2,
       title: "2000",
-      description: "Clients per year",
-      icon: <CgAwards className="text-5xl " />,
+      description: "Clients ",
+      icon: <CgAwards className="md:text-5xl " />,
     },
     {
       id: 3,
       title: "26",
       description: "Cleaners",
-      icon: <ImUsers className="text-5xl " />,
+      icon: <ImUsers className="md:text-5xl " />,
     },
     {
       id: 4,
       title: "5",
-      description: "Years of experience",
-      icon: <SlCalender className="text-5xl " />,
+      description: "Years/Experience",
+      icon: <SlCalender className="md:text-5xl " />,
     },
     {
       id: 5,
       title: "4572",
-      description: "Happy Smiles",
-      icon: <BiSmile className="text-5xl " />,
+      description: "Smiles",
+      icon: <BiSmile className="md:text-5xl " />,
     },
   ];
 
@@ -46,7 +46,7 @@ const Numbers = () => {
         backgroundImage: `url(${numbersbg})`,
       }}
     >
-      <div className="flex  justify-between w-[80%] mx-auto items-center gap-2">
+      <div className="flex  justify-between md:w-[80%] w-[95%] mx-auto items-center gap-2">
         {numbers.map((number) => (
           <div
             key={number.id}
@@ -55,8 +55,8 @@ const Numbers = () => {
             <p>{number.icon}</p>
 
             <div className="text-center">
-              <p className="text-5xl monts ">{number.title}</p>
-              <p className="">{number.description}</p>
+              <p className="md:text-5xl monts ">{number.title}</p>
+              <p className="md:text-md text-sm">{number.description}</p>
             </div>
           </div>
         ))}

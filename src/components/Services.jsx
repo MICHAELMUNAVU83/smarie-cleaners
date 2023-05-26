@@ -77,16 +77,16 @@ const Services = () => {
     >
       <div className="bg-white/50 w-[100%] py-12 h-[100%] ">
         <div className="flex flex-col py-8 justify-center items-center gap-2">
-          <p className="text-[#A8B1B3] monts text-2xl">
+          <p className="text-[#A8B1B3] monts md:text-2xl text-sm ">
             We make your life easier
           </p>
 
-          <p className="text-6xl roboto text-[#6197DC] font-semibold">
+          <p className="md:text-6xl text-4xl roboto text-[#6197DC] font-semibold">
             What We Offer
           </p>
         </div>
 
-        <div className="w-[80%] mx-auto grid grid-cols-3 gap-8">
+        <div className="w-[80%] mx-auto grid md:grid-cols-3 grid-cols-1  gap-8">
           {offers.map((offer) => (
             <div
               key={offer.id}

@@ -82,11 +82,11 @@ const Packages = () => {
   return (
     <div id="packages" className="my-8">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl  roboto text-[#5D95DB] font-bold">Packages</h1>
-        <p className="text-2xl monts text-[#B5BCBE]">We offer a wide range of cleaning services</p>
+        <h1 className="md:text-5xl text-3xl text-center roboto text-[#5D95DB] font-bold">Packages</h1>
+        <p className="md:text-2xl text-md text-center monts text-[#B5BCBE]">We offer a wide range of cleaning services</p>
       </div>
 
-      <div className="w-[80%] my-12 mx-auto  grid grid-cols-3 gap-8">
+      <div className="w-[80%] my-12 mx-auto grid-cols-1    grid md:grid-cols-3 gap-8">
         {pricings.map((pricing) => (
           <div
             key={pricing.id}
