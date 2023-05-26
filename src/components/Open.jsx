@@ -8,7 +8,7 @@ const Open = () => {
     {
       id: 1,
       name: "We are open",
-      description: "Mon-Fri: 08:00 -17:00",
+      description: "Mon-Fri: 8:00am -5:00pm",
       icon: <SlCalender />,
       backgroundColor: "#54A4DC",
     },
@@ -37,8 +37,12 @@ const Open = () => {
             style={{ backgroundColor: detail.backgroundColor }}
           >
             <div className="text-7xl text-white">{detail.icon}</div>
-            <div className="text-white font-bold text-xl">{detail.name}</div>
-            <div className="text-white text-sm">{detail.description}</div>
+            <div className="text-white roboto font-bold text-xl">
+              {detail.name}
+            </div>
+            <div className="text-white  monts text-sm">
+              {detail.description}
+            </div>
           </div>
         ))}
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import { IoCheckmarkSharp } from "react-icons/io5";
+import {AiOutlineSwapRight} from "react-icons/ai"
 
-const Pricing = () => {
+const Packages = () => {
   const pricings = [
     {
       id: 1,
@@ -79,31 +80,31 @@ const Pricing = () => {
     },
   ];
   return (
-    <div>
+    <div id="packages" className="my-8">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-bold">Packages</h1>
-        <p className="text-2xl">We offer a wide range of cleaning services</p>
+        <h1 className="text-5xl  roboto text-[#5D95DB] font-bold">Packages</h1>
+        <p className="text-2xl monts text-[#B5BCBE]">We offer a wide range of cleaning services</p>
       </div>
 
       <div className="w-[80%] my-12 mx-auto  grid grid-cols-3 gap-8">
         {pricings.map((pricing) => (
           <div
             key={pricing.id}
-            className="flex flex-col border-2 border-t-0 border-gray-500 h-[400px]  items-center gap-4"
+            className="flex  flex-col cursor-pointer border-2 border-t-0 border-gray-500 h-[400px]  items-center gap-4 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
           >
             <div
               style={{ backgroundColor: pricing.backgroundColor }}
               className="h-[100px] py-2 w-[100%] flex items-center text-white flex-col"
             >
-              <p className="text-2xl font-semibold">{pricing.title}</p>
-              <p className="text-2xl font-semibold">{pricing.description}</p>
-             
+              <p className="text-2xl font-bold">{pricing.title}</p>
+              <p className="text-2xl font-bold">{pricing.description}</p>
             </div>
-            <div className="flex flex-col justify-between  gap-2">
+            <div className="flex flex-col roboto justify-between  gap-2">
               {pricing.services.map((service) => (
                 <div className="flex items-center   text-start gap-2">
                   <IoCheckmarkSharp className="text-2xl text-green-500" />
                   <p className="">{service.title}</p>
+                  <AiOutlineSwapRight className="text-2xl text-green-500" />
                   <p className="">{service.price}</p>
                 </div>
               ))}
@@ -121,4 +122,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Packages;

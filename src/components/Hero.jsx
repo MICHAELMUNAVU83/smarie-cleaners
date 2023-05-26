@@ -9,7 +9,6 @@ import { MdArrowForwardIos } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
 import { Pagination } from "swiper";
 const Hero = () => {
   const swipe = () => {
@@ -25,30 +24,34 @@ const Hero = () => {
     {
       id: 1,
       image: homebg1,
-      title: "Slide 1",
-      description1: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "We clean. A lot.",
+      description1: "Clean Home.    Professional Service. Fair Price.",
+      description2:
+        "     Our professional and experienced cleaning  staff does the job right the first time.",
     },
     {
       id: 2,
       image: homebg2,
-      title: "Slide 3",
-      description1: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: " Let us help you",
+      description1: "Stop working. Spare some time   for real life.",
+      description2:
+        "Our professional and experienced cleaning  staff does the job right the first time.",
     },
     {
       id: 3,
       image: homebg3,
-      title: "Slide 3",
-      description1: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "We do it well",
+      description1: "Worry no more.Let us do your chores.    Quick. Proper",
+      description2:
+        "Our professional and experienced cleaning  staff does the job right the first time.",
     },
     {
       id: 4,
       image: homebg4,
-      title: "Slide 4",
-      description1: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "We clean. A lot.",
+      description1: "Clean Home.    Professional Service. Fair Price.",
+      description2:
+        "     Our professional and experienced cleaning  staff does the job right the first time.",
     },
   ];
   return (
@@ -58,6 +61,7 @@ const Hero = () => {
         clickable: true,
       }}
       modules={[Pagination]}
+      id="home"
       className="flex justify-center pb-8  items-center swiper-container"
     >
       {slides.map((slide) => (
@@ -72,10 +76,12 @@ const Hero = () => {
                 onClick={swipeBack}
               />
             </div>
-            <div>
-              <h1 className="text-4xl font-bold text-white">{slide.title}</h1>
-              <p className="text-white text-center">{slide.description1}</p>
-              <p className="text-white text-center">{slide.description2}</p>
+            <div className={slide.id % 2 === 0 ? "ml-[50%] bg-white rounded-2xl w-[400px] p-4" : "mr-[45%] w-[400px] bg-white rounded-2xl p-4"}>
+              <h1 className="text-4xl font-bold text-[#5D95DB]">
+                {slide.title}
+              </h1>
+              <p className="text-[#5A6B81] font-semibold text-2xl  ">{slide.description1}</p>
+              <p className="text-[#5C6977] text-2xl ]  ">{slide.description2}</p>
             </div>
             <div className="bg-[#5FBED6] p-2 mx-2 group cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out hover:bg-white">
               <MdArrowForwardIos

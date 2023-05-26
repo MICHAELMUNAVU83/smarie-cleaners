@@ -6,7 +6,7 @@ const HowWeWork = () => {
   const works = [
     {
       id: 1,
-      title: "Contact Us to book a term",
+      title: "Contact us",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       image: works1,
@@ -27,25 +27,27 @@ const HowWeWork = () => {
     },
   ];
   return (
-    <div>
+    <div id="howwework" className="my-8">
       <div className="flex flex-col py-8 justify-center items-center gap-2">
-        <p>Enjoy your app</p>
+        <p className="text-[#A8B1B3] text-2xl monts">Enjoy your app</p>
 
-        <p className="text-3xl font-semibold">How We Work</p>
+        <p className="text-5xl text-[#6197DC] roboto font-semibold">How We Work</p>
       </div>
 
       <div className="w-[80%] mx-auto flex justify-between items-center">
         {works.map((work) => (
           <div
             key={work.id}
-            className="flex flex-col justify-center items-center gap-4"
+            className="flex flex-col hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer justify-center items-center gap-4"
           >
             <div
               className="w-[200px] h-[200px] rounded-full bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${work.image})` }}
             ></div>
             <div className="text-2xl  font-semibold">{work.title}</div>
-            <div className=" text-sm w-[80%] mx-auto text-center">{work.description}</div>
+            <div className=" text-sm w-[80%] text-[#737579] mx-auto text-center">
+              {work.description}
+            </div>
           </div>
         ))}
       </div>

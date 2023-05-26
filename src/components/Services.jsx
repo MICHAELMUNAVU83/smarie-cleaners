@@ -9,7 +9,7 @@ import offer6 from "../images/offer6.png";
 import offer7 from "../images/offer7.png";
 import offer8 from "../images/offer8.png";
 import offer9 from "../images/offer9.png";
-const Offer = () => {
+const Services = () => {
   const offers = [
     {
       id: 1,
@@ -72,34 +72,42 @@ const Offer = () => {
       style={{
         backgroundImage: `url(${offerbg})`,
       }}
-      className="py-12 bg-cover bg-fixed bg-center bg-no-repeat"
+      id="services"
+      className=" bg-cover opacity bg-fixed bg-center bg-no-repeat"
     >
-      <div className="flex flex-col py-8 justify-center items-center gap-2">
-        <p>We make your life easier</p>
-        <p className="text-5xl">What we offer</p>
-      </div>
+      <div className="bg-white/50 w-[100%] py-12 h-[100%] ">
+        <div className="flex flex-col py-8 justify-center items-center gap-2">
+          <p className="text-[#A8B1B3] monts text-2xl">
+            We make your life easier
+          </p>
 
-      <div className="w-[80%] mx-auto grid grid-cols-3 gap-8">
-        {offers.map((offer) => (
-          <div
-            key={offer.id}
-            className="flex flex-col justify-center bg-white rounded-lg items-center gap-4"
-          >
-            <img
-              src={offer.image}
-              alt=""
-              className="w-[100%] h-[250px] bg-cover bg-center bg-no-repeat"
-            />
+          <p className="text-6xl roboto text-[#6197DC] font-semibold">
+            What We Offer
+          </p>
+        </div>
 
-            <div className="text-2xl font-semibold">{offer.title}</div>
-            <div className="text-sm w-[80%] mx-auto text-center">
-              {offer.description}
+        <div className="w-[80%] mx-auto grid grid-cols-3 gap-8">
+          {offers.map((offer) => (
+            <div
+              key={offer.id}
+              className="flex flex-col justify-center bg-white rounded-lg cursor-pointer  hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            >
+              <img
+                src={offer.image}
+                alt=""
+                className="w-[100%] h-[250px] rounded-t-lg bg-cover bg-center bg-no-repeat"
+              />
+
+              <div className="text-2xl p-1 font-semibold">{offer.title}</div>
+              <div className="text-sm p-1 text-[#5FBED6]">
+                {offer.description}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Offer;
+export default Services;

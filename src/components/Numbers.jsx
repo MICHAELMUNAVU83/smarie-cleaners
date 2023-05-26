@@ -40,17 +40,22 @@ const Numbers = () => {
   ];
 
   return (
-    <div className="py-12  bg-cover  bg-fixed bg-center bg-no-repeat">
+    <div
+      className="py-12 text-white  bg-cover  bg-fixed bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${numbersbg})`,
+      }}
+    >
       <div className="flex  justify-between w-[80%] mx-auto items-center gap-2">
         {numbers.map((number) => (
           <div
             key={number.id}
-            className="flex flex-col justify-center items-center gap-8"
+            className="flex flex-col cursor-pointer justify-center items-center gap-8"
           >
             <p>{number.icon}</p>
 
             <div className="text-center">
-              <p className="text-5xl ">{number.title}</p>
+              <p className="text-5xl monts ">{number.title}</p>
               <p className="">{number.description}</p>
             </div>
           </div>

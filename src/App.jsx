@@ -5,10 +5,10 @@ import HowWeWork from "./components/HowWeWork";
 
 import Hero from "./components/Hero";
 import Open from "./components/Open";
-import Offer from "./components/Offer";
+import Services from "./components/Services";
 import Numbers from "./components/Numbers";
 import "./App.css";
-import Pricing from "./components/Pricing";
+import Packages from "./components/Packages";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
       <Hero />
       <Open />
       <HowWeWork />
-      <Offer />
+      <Services />
       <Numbers />
-      <Pricing />
+      <Packages />
       <Footer />
     </div>
   );
