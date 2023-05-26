@@ -5,41 +5,84 @@ const Pricing = () => {
   const pricings = [
     {
       id: 1,
-      title: "Basic",
-      services: ["Cleaning", "Carpet Cleaning", "Cleaning", "Carpet Cleaning"],
+      title: "Commercial",
+      services: [
+        {
+          id: 1,
+          title: "Big Corporate Offices",
+          price: "10,000 Ksh",
+        },
+        {
+          id: 2,
+          title: "Small Offices",
+          price: "5,000 Ksh",
+        },
+      ],
       backgroundColor: "#54A4DC",
-      price: "100",
     },
     {
       id: 1,
-      title: "Standard",
-      services: ["Cleaning", "Carpet Cleaning", "Cleaning", "Carpet Cleaning"],
+      title: "Residential",
+      services: [
+        {
+          id: 1,
+          title: "Studio Apartments",
+          price: "1,000 Ksh",
+        },
+        {
+          id: 2,
+          title: "1 Bedroom Apartments",
+          price: "2,500 Ksh",
+        },
+        {
+          id: 3,
+          title: "2 Bedroom Apartments",
+          price: "5,000",
+        },
+        {
+          id: 4,
+          title: "3 Bedroom Apartments",
+          price: "6,000",
+        },
+        {
+          id: 5,
+          title: "4 Bedroom Apartments and more",
+          price: "8,000",
+        },
+      ],
       backgroundColor: "#5FBED6",
-      price: "200",
     },
     {
       id: 1,
-      title: "Premium",
-      services: ["Cleaning", "Carpet Cleaning", "Cleaning", "Carpet Cleaning"],
+      title: "Extra Services",
+      services: [
+        {
+          id: 1,
+          title: "Fridge Cleaning",
+          price: "400 Ksh",
+        },
+        {
+          id: 2,
+          title: "Microwave Cleaning",
+          price: "300 Ksh",
+        },
+        {
+          id: 3,
+          title: "Oven Cleaning",
+          price: "300",
+        },
+      ],
       backgroundColor: "#46C6CE",
-      price: "300",
-    },
-    {
-      id: 1,
-      title: "Gold",
-      services: ["Cleaning", "Carpet Cleaning", "Cleaning", "Carpet Cleaning"],
-      backgroundColor: "#FFBF37",
-      price: "200",
     },
   ];
   return (
     <div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-bold">Pricing</h1>
+        <h1 className="text-5xl font-bold">Packages</h1>
         <p className="text-2xl">We offer a wide range of cleaning services</p>
       </div>
 
-      <div className="w-[80%] my-12 mx-auto grid grid-cols-4 gap-8">
+      <div className="w-[80%] my-12 mx-auto  grid grid-cols-3 gap-8">
         {pricings.map((pricing) => (
           <div
             key={pricing.id}
@@ -55,9 +98,10 @@ const Pricing = () => {
             </div>
             <div className="flex flex-col justify-center  gap-2">
               {pricing.services.map((service) => (
-                <div className="flex items-center  text-start gap-2">
+                <div className="flex items-center   text-start gap-2">
                   <IoCheckmarkSharp className="text-2xl text-green-500" />
-                  <p className="text-2xl">{service}</p>
+                  <p className="">{service.title}</p>
+                  <p className="">{service.price}</p>
                 </div>
               ))}
             </div>

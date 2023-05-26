@@ -1,7 +1,14 @@
 import React from "react";
 import offerbg from "../images/offerbg.png";
 import offer1 from "../images/offer1.png";
-
+import offer2 from "../images/offer2.png";
+import offer3 from "../images/offer3.png";
+import offer4 from "../images/offer4.png";
+import offer5 from "../images/offer5.png";
+import offer6 from "../images/offer6.png";
+import offer7 from "../images/offer7.png";
+import offer8 from "../images/offer8.png";
+import offer9 from "../images/offer9.png";
 const Offer = () => {
   const offers = [
     {
@@ -14,49 +21,49 @@ const Offer = () => {
       id: 2,
       title: "Dusting Surfaces",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer2,
     },
     {
       id: 3,
       title: "Trash Removal",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer3,
     },
     {
       id: 4,
       title: "Restroom Cleaning",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer4,
     },
     {
       id: 5,
       title: "Vaccuming",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer5,
     },
     {
       id: 6,
       title: "Custom Cleaning",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer6,
     },
     {
       id: 7,
       title: "Move In/Out Cleaning",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer7,
     },
     {
       id: 8,
       title: "Fridge Cleaning",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer8,
     },
     {
       id: 9,
       title: "Oven Cleaning",
       description: "Lorem Ipsum",
-      image: offer1,
+      image: offer9,
     },
   ];
 
