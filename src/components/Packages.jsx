@@ -1,6 +1,6 @@
 import React from "react";
 import { IoCheckmarkSharp } from "react-icons/io5";
-import {AiOutlineSwapRight} from "react-icons/ai"
+import { AiOutlineSwapRight } from "react-icons/ai";
 
 const Packages = () => {
   const pricings = [
@@ -82,8 +82,12 @@ const Packages = () => {
   return (
     <div id="packages" className="my-8">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="md:text-5xl text-3xl text-center roboto text-[#5D95DB] font-bold">Packages</h1>
-        <p className="md:text-2xl text-md text-center monts text-[#B5BCBE]">We offer a wide range of cleaning services</p>
+        <h1 className="md:text-5xl text-3xl text-center roboto text-[#5D95DB] font-bold">
+          Packages
+        </h1>
+        <p className="md:text-2xl text-md text-center monts text-[#B5BCBE]">
+          We offer a wide range of cleaning services
+        </p>
       </div>
 
       <div className="w-[80%] my-12 mx-auto grid-cols-1    grid md:grid-cols-3 gap-8">
@@ -108,12 +112,14 @@ const Packages = () => {
                   <p className="md:text-md text-xs">{service.price}</p>
                 </div>
               ))}
-              <button
-                className="bg-blue-500 w-[70%] mx-auto text-white px-8 py-2 mt-4 hover:scale-105 transition-all duration-300 ease-in-out"
+              <a
+                className="bg-blue-500 w-[70%] flex justify-center items-center mx-auto text-white px-8 py-2 mt-4 hover:scale-105 transition-all duration-300 ease-in-out"
                 style={{ backgroundColor: pricing.backgroundColor }}
+                href="tel:0710471667"
+                rel="noreferrer"
               >
-                Book Now
-              </button>
+                Call to Book
+              </a>
             </div>
           </div>
         ))}

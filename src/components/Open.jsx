@@ -1,29 +1,29 @@
 import React from "react";
 import { SlCalender } from "react-icons/sl";
 import { FiSmartphone } from "react-icons/fi";
-import { BsEnvelope } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Open = () => {
   const details = [
     {
       id: 1,
       name: "We are open",
-      description: "Mon-Fri: 8:00am -5:00pm",
+      description: "Mon-Sunday: 8:00am -5:00pm",
       icon: <SlCalender />,
       backgroundColor: "#54A4DC",
     },
     {
       id: 2,
       name: "Call us",
-      description: "+254 712 345 678",
+      description: "+254 7104 71667",
       icon: <FiSmartphone />,
       backgroundColor: "#FFBF37",
     },
     {
       id: 3,
-      name: "Order online",
-      description: "mail@gmail.com",
-      icon: <BsEnvelope />,
+      name: "Whatsapp us",
+      description: "+254 7104 71667",
+      icon: <IoLogoWhatsapp />,
       backgroundColor: "#46C6CE",
     },
   ];

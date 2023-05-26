@@ -16,7 +16,7 @@ const TopNavBar = () => {
 
           <div className="flex justify-center items-center gap-1">
             <IoMdCall className="text-white  text-sm" />
-            <p className="text-white text-xs">+254 712 345 678</p>
+            <p className="text-white text-xs">+254 7104 71667</p>
           </div>
         </div>
 

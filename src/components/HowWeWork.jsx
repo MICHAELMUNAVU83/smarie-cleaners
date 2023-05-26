@@ -8,21 +8,21 @@ const HowWeWork = () => {
       id: 1,
       title: "Contact us",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "Reach out to our cleaning services team to discuss your cleaning needs.",
       image: works1,
     },
     {
       id: 2,
-      title: "Welcome our cleaning team",
+      title: "Welcome our team",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "Once you've scheduled your cleaning service, our professional team will arrive at your location promptly.",
       image: works2,
     },
     {
       id: 3,
       title: "Enjoy the premium service",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "Sit back, relax, and let us take care of the cleaning for you. ",
       image: works3,
     },
   ];

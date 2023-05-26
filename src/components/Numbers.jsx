@@ -3,7 +3,7 @@ import numbersbg from "../images/numbersbg.png";
 import { BsFillHandThumbsUpFill } from "react-icons/bs";
 import { CgAwards } from "react-icons/cg";
 import { ImUsers } from "react-icons/im";
-import { SlCalender } from "react-icons/sl";
+import { BsFillHouseAddFill } from "react-icons/bs";
 import { BiSmile } from "react-icons/bi";
 const Numbers = () => {
   const numbers = [
@@ -11,31 +11,31 @@ const Numbers = () => {
       id: 1,
       title: "100%",
       description: "Quality",
-      icon: <BsFillHandThumbsUpFill className="md:text-5xl " />,
+      icon: <BsFillHandThumbsUpFill className="md:text-5xl  text-2xl" />,
     },
     {
       id: 2,
-      title: "2000",
+      title: "300",
       description: "Clients ",
-      icon: <CgAwards className="md:text-5xl " />,
+      icon: <CgAwards className="md:text-5xl text-2xl " />,
     },
     {
       id: 3,
       title: "26",
       description: "Cleaners",
-      icon: <ImUsers className="md:text-5xl " />,
+      icon: <ImUsers className="md:text-5xl text-2xl " />,
     },
     {
       id: 4,
-      title: "5",
-      description: "Years/Experience",
-      icon: <SlCalender className="md:text-5xl " />,
+      title: "200",
+      description: "Houses",
+      icon: <BsFillHouseAddFill className="md:text-5xl text-2xl " />,
     },
     {
       id: 5,
       title: "4572",
       description: "Smiles",
-      icon: <BiSmile className="md:text-5xl " />,
+      icon: <BiSmile className="md:text-5xl text-2xl " />,
     },
   ];
 

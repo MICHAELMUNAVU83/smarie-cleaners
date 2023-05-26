@@ -17,11 +17,12 @@ function App() {
       <NavBar />
       <Hero />
       <Open />
-     
+
       <HowWeWork />
       <Services />
-      <Numbers />
+
       <Packages />
+      <Numbers />
       <Footer />
     </div>
   );
