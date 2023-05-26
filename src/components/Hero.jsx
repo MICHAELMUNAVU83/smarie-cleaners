@@ -8,8 +8,9 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 const Hero = () => {
   const swipe = () => {
     const swiper = document.querySelector(".swiper-container").swiper;
@@ -60,7 +61,11 @@ const Hero = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination, Autoplay]}
       id="home"
       className="flex justify-center pb-8  items-center swiper-container"
     >
@@ -76,12 +81,22 @@ const Hero = () => {
                 onClick={swipeBack}
               />
             </div>
-            <div className={slide.id % 2 === 0 ? "ml-[50%] bg-white rounded-2xl w-[400px] p-4" : "mr-[45%] w-[400px] bg-white rounded-2xl p-4"}>
-              <h1 className="text-4xl font-bold text-[#5D95DB]">
+            <div
+              className={
+                slide.id % 2 === 0
+                  ? "ml-[50%] bg-white rounded-2xl w-[400px] p-4"
+                  : "mr-[45%] w-[400px] bg-white rounded-2xl p-4"
+              }
+            >
+              <h1 className="text-4xl font-bold roboto text-[#5D95DB]">
                 {slide.title}
               </h1>
-              <p className="text-[#5A6B81] font-semibold text-2xl  ">{slide.description1}</p>
-              <p className="text-[#5C6977] text-2xl ]  ">{slide.description2}</p>
+              <p className="text-[#5A6B81] font-semibold monts text-2xl  ">
+                {slide.description1}
+              </p>
+              <p className="text-[#5C6977] text-2xl ] roboto  ">
+                {slide.description2}
+              </p>
             </div>
             <div className="bg-[#5FBED6] p-2 mx-2 group cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out hover:bg-white">
               <MdArrowForwardIos
