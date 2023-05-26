@@ -6,6 +6,7 @@ const Pricing = () => {
     {
       id: 1,
       title: "Commercial",
+      description: "Cleaning",
       services: [
         {
           id: 1,
@@ -23,6 +24,7 @@ const Pricing = () => {
     {
       id: 1,
       title: "Residential",
+      description: "Cleaning",
       services: [
         {
           id: 1,
@@ -55,6 +57,7 @@ const Pricing = () => {
     {
       id: 1,
       title: "Extra Services",
+      description: "Offered",
       services: [
         {
           id: 1,
@@ -93,10 +96,10 @@ const Pricing = () => {
               className="h-[100px] py-2 w-[100%] flex items-center text-white flex-col"
             >
               <p className="text-2xl font-semibold">{pricing.title}</p>
-              <p className="text-2xl font-semibold">{pricing.price}</p>
-              <p>per month</p>
+              <p className="text-2xl font-semibold">{pricing.description}</p>
+             
             </div>
-            <div className="flex flex-col justify-center  gap-2">
+            <div className="flex flex-col justify-between  gap-2">
               {pricing.services.map((service) => (
                 <div className="flex items-center   text-start gap-2">
                   <IoCheckmarkSharp className="text-2xl text-green-500" />
@@ -104,13 +107,13 @@ const Pricing = () => {
                   <p className="">{service.price}</p>
                 </div>
               ))}
+              <button
+                className="bg-blue-500 w-[70%] mx-auto text-white px-8 py-2 mt-4 hover:scale-105 transition-all duration-300 ease-in-out"
+                style={{ backgroundColor: pricing.backgroundColor }}
+              >
+                Book Now
+              </button>
             </div>
-            <button
-              className="bg-blue-500 text-white px-8 py-2 mt-4 hover:scale-105 transition-all duration-300 ease-in-out"
-              style={{ backgroundColor: pricing.backgroundColor }}
-            >
-              Book Now
-            </button>
           </div>
         ))}
       </div>
