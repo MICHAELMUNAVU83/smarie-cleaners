@@ -28,7 +28,7 @@ const HowWeWork = () => {
   ];
   return (
     <div id="howwework">
-      <div className="flex flex-col  justify-center items-center gap-2">
+      <div className="flex flex-col my-4 justify-center items-center gap-2">
         <p className="text-[#A8B1B3] text-2xl monts">Enjoy your app</p>
 
         <p className="text-5xl text-[#6197DC] roboto font-semibold">
@@ -46,7 +46,7 @@ const HowWeWork = () => {
               className="w-[200px] h-[200px] rounded-full bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${work.image})` }}
             ></div>
-            <div className="text-2xl  font-semibold">{work.title}</div>
+            <div className="text-2xl text-center  font-semibold">{work.title}</div>
             <div className=" text-sm w-[80%] text-[#737579] mx-auto text-center">
               {work.description}
             </div>
