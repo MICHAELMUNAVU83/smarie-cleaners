@@ -85,7 +85,7 @@ const Pricing = () => {
         <p className="text-2xl">We offer a wide range of cleaning services</p>
       </div>
 
-      <div className="w-[94%] my-12 mx-auto  grid grid-cols-3 gap-8">
+      <div className="w-[80%] my-12 mx-auto  grid grid-cols-3 gap-8">
         {pricings.map((pricing) => (
           <div
             key={pricing.id}
