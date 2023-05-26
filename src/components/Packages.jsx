@@ -103,9 +103,9 @@ const Packages = () => {
               {pricing.services.map((service) => (
                 <div className="flex items-center   text-start gap-2">
                   <IoCheckmarkSharp className="text-2xl text-green-500" />
-                  <p className="">{service.title}</p>
+                  <p className="md:text-md text-xs">{service.title}</p>
                   <AiOutlineSwapRight className="text-2xl text-green-500" />
-                  <p className="">{service.price}</p>
+                  <p className="md:text-md text-xs">{service.price}</p>
                 </div>
               ))}
               <button

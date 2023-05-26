@@ -36,7 +36,7 @@ const HowWeWork = () => {
         </p>
       </div>
 
-      <div className="w-[80%] mx-auto flex md:flex-row flex-col justify-between items-center">
+      <div className="w-[80%] mx-auto flex md:flex-row flex-col gap-4 justify-between items-center">
         {works.map((work) => (
           <div
             key={work.id}

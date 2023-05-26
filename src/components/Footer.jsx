@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <div className="flex flex-col w-[80%] mx-auto py-8">
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3   grid-cols-1 w-[100%] md:gap-32 gap-8">
           <div className=" flex flex-col gap-2">
             <a href="#home" className="font-bold">
               <img src={logo} alt="logo" className="h-[50px] object-cover" />
@@ -18,6 +18,7 @@ const Footer = () => {
               nisi diam viverra metus, porta semper est ipsum et sapien.
             </p>
           </div>
+          <div className=" flex justify-between ">
           <div className=" flex flex-col gap-2">
             <p className="font-bold">Navigation</p>
             <div className="flex text-[#5FBED6] roboto cursor-pointer flex-col gap-2">
@@ -64,7 +65,8 @@ const Footer = () => {
                 Domestic Cleaning
               </p>
             </div>
-          </div>
+            </div>
+            </div>
 
           <div className=" flex flex-col gap-2">
             <p className="font-bold">Contact Information</p>
@@ -90,8 +92,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#5FBED6]  py-4">
-        <div className="w-[80%] mx-auto flex justify-between items-center text-white">
-          <p>Privacy Policy | Terms of Service | Contact Us</p>
+        <div className="w-[80%] mx-auto flex justify-between items-center  md:text-sm text-xs text-white">
+          <p >Privacy Policy | Terms of Service | Contact Us</p>
           <p>Smarie © 2023</p>
         </div>
       </div>

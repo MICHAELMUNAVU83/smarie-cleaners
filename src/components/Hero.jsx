@@ -84,8 +84,8 @@ const Hero = () => {
             <div
               className={
                 slide.id % 2 === 0
-                  ? "md:ml-[50%] bg-white rounded-2xl  w-[400px]  p-4"
-                  : "md:mr-[45%] w-[400px]    bg-white rounded-2xl p-4"
+                  ? "md:ml-[50%] bg-white md:mt-0 mt-[90%] rounded-2xl  w-[400px]  p-4"
+                  : "md:mr-[45%] w-[400px] mt-[90%]   bg-white rounded-2xl p-4"
               }
             >
               <h1 className="md:text-4xl font-bold roboto text-[#5D95DB]">
