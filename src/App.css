@@ -19,3 +19,8 @@ html {
 .monts {
   font-family: "Montserrat", sans-serif;
 }
+
+.swiper-pagination-bullet {
+  background-color: #5fbed6;
+  /* Additional styling properties */
+}
