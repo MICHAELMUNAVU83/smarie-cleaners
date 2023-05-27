@@ -41,9 +41,13 @@ const NavBar = () => {
           >
             Our Packages
           </a>
-          <p className="cursor-pointer  hover:text-[#5FBED6] hover:scale-105 transition-all ease-in-out duration-500">
+          <a
+            rel="noreferrer"
+            href="tel:0790995133"
+            className="cursor-pointer  hover:text-[#5FBED6] hover:scale-105 transition-all ease-in-out duration-500"
+          >
             Call In
-          </p>
+          </a>
         </div>
         <div className="sm:hidden px-4 md:px-0 block ">
           {!nav && (

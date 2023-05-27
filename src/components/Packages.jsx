@@ -40,17 +40,17 @@ const Packages = () => {
         {
           id: 3,
           title: "2 Bedroom Apartments",
-          price: "5,000",
+          price: "5,000 Ksh",
         },
         {
           id: 4,
           title: "3 Bedroom Apartments",
-          price: "6,000",
+          price: "6,000 Ksh",
         },
         {
           id: 5,
           title: "4 Bedroom Apartments and more",
-          price: "8,000",
+          price: "8,000 Ksh",
         },
       ],
       backgroundColor: "#5FBED6",
@@ -73,7 +73,7 @@ const Packages = () => {
         {
           id: 3,
           title: "Oven Cleaning",
-          price: "300",
+          price: "300 Ksh",
         },
       ],
       backgroundColor: "#46C6CE",
@@ -94,7 +94,7 @@ const Packages = () => {
         {pricings.map((pricing) => (
           <div
             key={pricing.id}
-            className="flex  flex-col cursor-pointer border-2 border-t-0 border-gray-500 h-[400px]  items-center gap-4 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
+            className="flex  flex-col md:cursor-pointer border-2 border-t-0 border-gray-500 h-[400px]  items-center gap-4 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
           >
             <div
               style={{ backgroundColor: pricing.backgroundColor }}
@@ -106,9 +106,9 @@ const Packages = () => {
             <div className="flex flex-col roboto justify-between  gap-2">
               {pricing.services.map((service) => (
                 <div className="flex items-center   text-start gap-2">
-                  <IoCheckmarkSharp className="text-2xl text-green-500" />
+                  <IoCheckmarkSharp className="md:text-2xl text-sm text-green-500" />
                   <p className="md:text-md text-xs">{service.title}</p>
-                  <AiOutlineSwapRight className="text-2xl text-green-500" />
+                  <AiOutlineSwapRight className="md:text-2xl text-sm text-green-500" />
                   <p className="md:text-md text-xs">{service.price}</p>
                 </div>
               ))}

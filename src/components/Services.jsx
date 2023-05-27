@@ -14,55 +14,55 @@ const Services = () => {
     {
       id: 1,
       title: "Cleaning",
-      description: "Lorem Ipsum",
+      description: "Thorough Cleaning",
       image: offer1,
     },
     {
       id: 2,
       title: "Dusting Surfaces",
-      description: "Lorem Ipsum",
+      description: "Surface Dusting ",
       image: offer2,
     },
     {
       id: 3,
       title: "Trash Removal",
-      description: "Lorem Ipsum",
+      description: "Waste Removal ",
       image: offer3,
     },
     {
       id: 4,
       title: "Restroom Cleaning",
-      description: "Lorem Ipsum",
+      description: "Restroom Sanitization ",
       image: offer4,
     },
     {
       id: 5,
       title: "Vaccuming",
-      description: "Lorem Ipsum",
+      description: "Carpet Vacuuming",
       image: offer5,
     },
     {
       id: 6,
       title: "Custom Cleaning",
-      description: "Lorem Ipsum",
+      description: "Customized Cleaning",
       image: offer6,
     },
     {
       id: 7,
       title: "Move In/Out Cleaning",
-      description: "Lorem Ipsum",
+      description: "Move-in/Out Cleaning",
       image: offer7,
     },
     {
       id: 8,
       title: "Fridge Cleaning",
-      description: "Lorem Ipsum",
+      description: "Fridge Deep Cleaning",
       image: offer8,
     },
     {
       id: 9,
       title: "Oven Cleaning",
-      description: "Lorem Ipsum",
+      description: "Oven Deep Cleaning",
       image: offer9,
     },
   ];
@@ -95,7 +95,7 @@ const Services = () => {
               <img
                 src={offer.image}
                 alt=""
-                className="w-[100%] h-[250px] rounded-t-lg bg-cover bg-center bg-no-repeat"
+                className="w-[100%] h-[250px] rounded-t-lg object-cover"
               />
 
               <div className="text-2xl p-1 font-semibold">{offer.title}</div>

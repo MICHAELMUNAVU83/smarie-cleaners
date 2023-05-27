@@ -13,13 +13,12 @@ const Footer = () => {
               <img src={logo} alt="logo" className="h-[50px] object-cover" />
             </a>
             <p>
-              Experience the difference with Smarie cleaning service
-              company. From meticulous attention to detail to exceptional
-              customer satisfaction, we deliver a spotless and pristine
-              environment that exceeds your expectations. Trust our reliable
-              professionals to transform your space into a clean and inviting
-              haven, leaving you with more time to enjoy the things that matter
-              most to you.
+              Experience the difference with Smarie cleaning service company.
+              From meticulous attention to detail to exceptional customer
+              satisfaction, we deliver a spotless and pristine environment that
+              exceeds your expectations. Trust our reliable professionals to
+              transform your space into a clean and inviting haven, leaving you
+              with more time to enjoy the things that matter most to you.
             </p>
           </div>
           <div className=" flex justify-between ">
@@ -80,7 +79,6 @@ const Footer = () => {
                 <p>Nairobi , Kenya</p>
               </div>
               <a
-                target="_blank"
                 rel="noreferrer"
                 href="tel:0710471667"
                 className="flex gap-2 items-center"
@@ -89,7 +87,6 @@ const Footer = () => {
                 <p>+254 7104 71667</p>
               </a>
               <a
-                target="_blank"
                 rel="noreferrer"
                 href="tel:0790995133"
                 className="flex gap-2 items-center"
