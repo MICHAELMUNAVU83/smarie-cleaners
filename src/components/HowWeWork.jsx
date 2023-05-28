@@ -27,7 +27,7 @@ const HowWeWork = () => {
     },
   ];
   return (
-    <div id="howwework " className="my-8">
+    <div id="howwework" className="my-8">
       <div className="flex flex-col my-4 justify-center items-center gap-2">
         <p className="text-[#A8B1B3] text-2xl monts">Enjoy your time off</p>
 
