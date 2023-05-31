@@ -2,6 +2,7 @@ import React from "react";
 import { MdLocationPin } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
+
 import logo from "../images/logo.png";
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
               <img src={logo} alt="logo" className="h-[50px] object-cover" />
             </a>
             <p>
-              Experience the difference with Smarie cleaning service company.
+              Experience the difference with Sparklin Kleen service company.
               From meticulous attention to detail to exceptional customer
               satisfaction, we deliver a spotless and pristine environment that
               exceeds your expectations. Trust our reliable professionals to
@@ -110,7 +111,7 @@ const Footer = () => {
       <div className="bg-[#5FBED6]  py-4">
         <div className="w-[80%] mx-auto flex justify-between items-center  md:text-sm text-xs text-white">
           <p>Privacy Policy | Terms of Service | Contact Us</p>
-          <p>Smarie © 2023</p>
+          <p>Sparklin Kleen © 2023</p>
         </div>
       </div>
     </div>

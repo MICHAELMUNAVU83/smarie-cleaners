@@ -13,7 +13,7 @@ const NavBar = () => {
         <img
           src={logo}
           alt="logo"
-          className="cursor-pointer object-cover md:px-0 px-2 h-[40px] md:h-[70px]"
+          className="cursor-pointer object-cover md:px-0 px-2 h-[100px] md:h-[80px]"
         />
 
         <div className="md:flex hidden justify-center items-center gap-4">
